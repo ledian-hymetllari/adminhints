@@ -1,5 +1,5 @@
 # adminhints
-Enable adminhtml hints for magento 1.9 version. 
+Enable adminhtml hints for magento 1.9 version from admin interface. 
 
 This extension helps Developers to enable Admin Hints during customization of Adminhtml Theme. 
 
