@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ledian_Adminhints>
+            <version>1.0.0</version>
+        </Ledian_Adminhints>
+    </modules>
+
+    <global>
+        <helpers>
+            <ledian_adminhints>
+                <class>Ledian_Adminhints_Helper</class>
+            </ledian_adminhints>
+        </helpers>
+        <models>
+            <ledian_adminhints>
+                <class>Ledian_Adminhints_Model</class>
+            </ledian_adminhints>
+        </models>
+        <resources>
+            <ledian_adminhints_setup>
+                <setup>
+                    <module>Ledian_Adminhints</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ledian_adminhints_setup>
+        </resources>
+
+        <events>
+            <admin_system_config_changed_section_dev>
+                <observers>
+                    <mymodule>
+                        <class>ledian_adminhints/observer</class>
+                        <method>handleAdminHints</method>
+                    </mymodule>
+                </observers>
+            </admin_system_config_changed_section_dev>
+        </events>
+    </global>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ledian_Adminhints>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Ledian_Adminhints>
+    </modules>
+</config>
